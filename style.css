@@ -463,6 +463,32 @@ img { max-width: 100%; display: block; }
   top: 5px;
 }
 
+/* Experience section divider */
+.exp-divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 0;
+  margin: 8px 0 0;
+}
+
+.exp-divider::before,
+.exp-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--color-border);
+}
+
+.exp-divider span {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-grey);
+  white-space: nowrap;
+}
+
 /* ===== PLACEHOLDER SECTIONS ===== */
 .placeholder-section {
   border: 1px dashed var(--color-border-2);
