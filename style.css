@@ -626,6 +626,17 @@ img { max-width: 100%; display: block; }
   border-top: 1px solid var(--color-border);
 }
 
+.scout-video {
+  margin-top: 4px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 16px;
+}
+
+.scout-video wistia-player {
+  display: block;
+  width: 100%;
+}
+
 @media (max-width: 1024px) {
   .scout-grid { grid-template-columns: 1fr; }
 }
