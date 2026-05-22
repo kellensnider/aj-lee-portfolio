@@ -674,7 +674,6 @@ img { max-width: 100%; display: block; }
 }
 
 .carousel-viewport {
-  border: 1px solid var(--color-border);
   position: relative;
 }
 
