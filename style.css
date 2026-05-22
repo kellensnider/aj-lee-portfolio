@@ -674,18 +674,20 @@ img { max-width: 100%; display: block; }
 }
 
 .carousel-viewport {
-  overflow: hidden;
   border: 1px solid var(--color-border);
+  position: relative;
 }
 
 .carousel-track {
-  display: flex;
-  transition: transform 0.42s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 
 .carousel-slide {
-  min-width: 100%;
-  flex-shrink: 0;
+  display: none;
+}
+
+.carousel-slide.active {
+  display: block;
 }
 
 .carousel-slide wistia-player {

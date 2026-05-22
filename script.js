@@ -76,8 +76,9 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   });
 
   function goTo(index) {
+    slides[current].classList.remove('active');
     current = index;
-    track.style.transform = `translateX(-${current * 100}%)`;
+    slides[current].classList.add('active');
     dotsEl.querySelectorAll('.carousel-dot').forEach((d, i) =>
       d.classList.toggle('active', i === current)
     );
@@ -99,5 +100,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     }
   }, { passive: true });
 
-  goTo(0);
+  // Show first slide
+  slides[0].classList.add('active');
+  prevBtn.disabled = true;
 }());
